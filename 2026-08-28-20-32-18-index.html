@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="ميديلايف Medilife - حلول متكاملة للتغذية والصحة الحيوانية في أربيل. وكلاء حصريون لـ MG2MIX وPhosphia الفرنسية.">
+  <meta name="theme-color" content="#07566a">
+  <title>ميديلايف | Medilife - حلول التغذية والصحة الحيوانية</title>
+  <style>
+    :root{
+      --teal:#07566a; --teal2:#0b7187; --ink:#12313a; --muted:#61757b;
+      --bg:#f6fafb; --card:#fff; --line:#dbe7ea; --gold:#c99a3b;
+      --shadow:0 12px 35px rgba(10,55,65,.10); --radius:22px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.8}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand img{width:145px;height:58px;object-fit:contain;border-radius:8px}
+    nav{display:flex;align-items:center;gap:25px;font-weight:700}
+    nav a{padding:9px 0;color:#1a3e47} nav a:hover,nav a.active{color:var(--teal)}
+    .lang{display:flex;border:1px solid var(--line);border-radius:30px;overflow:hidden;font-size:13px}
+    .lang a{padding:6px 12px}.lang .on{background:var(--teal);color:#fff}
+    .hero{position:relative;min-height:560px;display:flex;align-items:center;background:#0a5367;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,55,68,.35),rgba(255,255,255,.05));z-index:1}
+    .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .hero-content{position:relative;z-index:2;margin-right:auto;width:min(620px,92%);padding:70px 0;color:#fff}
+    .eyebrow{display:inline-block;padding:6px 13px;border:1px solid rgba(255,255,255,.55);border-radius:30px;background:rgba(0,0,0,.18);font-size:14px;margin-bottom:12px}
+    h1{font-size:clamp(38px,5vw,65px);line-height:1.15;margin:8px 0 14px}
+    .hero h1 span{font-weight:500}
+    .hero p{font-size:21px;max-width:600px;margin:0 0 25px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:14px;font-weight:800;border:1px solid transparent}
+    .btn.primary{background:#fff;color:var(--teal)} .btn.whatsapp{background:#20a85a;color:#fff}.btn.outline{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+    .trust{background:#fff;border-bottom:1px solid var(--line)}
+    .trust-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+    .trust-item{padding:18px 12px;text-align:center;border-left:1px solid var(--line);font-weight:800}
+    .trust-item:first-child{border-left:0}.trust-item small{display:block;color:var(--muted);font-weight:500}
+    section{padding:75px 0}.section-head{text-align:center;margin-bottom:35px}
+    .section-head h2{font-size:36px;margin:0;color:var(--teal)}
+    .section-head p{color:var(--muted);margin:6px auto;max-width:720px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .product{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.2s}
+    .product:hover{transform:translateY(-4px)}
+    .product-media{height:190px;position:relative;overflow:hidden;background:#edf5f6}
+    .product-media img{width:100%;height:100%;object-fit:cover}
+    .animal{position:absolute;bottom:10px;right:12px;background:rgba(255,255,255,.94);border-radius:30px;padding:6px 12px;font-size:25px}
+    .product-body{padding:18px 20px 20px}.product h3{margin:0 0 4px;font-size:21px;color:var(--teal)}
+    .product p{margin:0;color:var(--muted);font-size:14px}
+    .about{background:#fff}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+    .about-img{width:100%;height:390px;object-fit:cover;border-radius:28px;box-shadow:var(--shadow)}
+    .ticks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+    .tick{background:#f4fafb;border:1px solid var(--line);padding:14px;border-radius:15px;font-weight:700}
+    .partners{background:#edf7f8}.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:850px;margin:auto}
+    .partner{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center;box-shadow:var(--shadow)}
+    .partner strong{display:block;font-size:31px;color:var(--teal)} .partner span{color:var(--muted)}
+    .contact{background:var(--teal);color:#fff}.contact .section-head h2,.contact .section-head p{color:#fff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .contact-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:25px}
+    .contact-card h3{margin-top:0}.contact-card a{display:block;margin:8px 0;font-size:19px;font-weight:800}
+    footer{background:#043d4c;color:#dcecef;padding:25px 0;text-align:center;font-size:14px}
+    .mobile-menu{display:none}
+    @media(max-width:900px){
+      nav{display:none}.mobile-menu{display:block;background:none;border:0;font-size:27px;color:var(--teal)}
+      .hero{min-height:600px}.hero-content{width:92%;margin:auto;text-align:center}.actions{justify-content:center}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(3){border-left:0}
+      .products{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.partner-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:600px){
+      .nav{height:68px}.brand img{width:125px}.hero{min-height:560px}
+      .hero-content{padding:40px 0}.hero p{font-size:17px}.section-head h2{font-size:29px}
+      .products{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{border-bottom:1px solid var(--line);font-size:14px}
+      .about-img{height:260px}.ticks{grid-template-columns:1fr}.btn{width:100%}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="Medilife"></a>
+    <nav>
+      <a class="active" href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#products">منتجاتنا</a>
+      <a href="#partners">وكلاؤنا</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+    <div class="lang"><a class="on" href="#">العربية</a><a href="#" onclick="alert('English version can be added next.');return false;">English</a></div>
+    <button class="mobile-menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <img class="hero-img" src="assets/hero-wide.jpg" alt="منتجات ميديلايف وحيوانات المزرعة">
+  <div class="container hero-content">
+    <span class="eyebrow">MEDILIFE | ميديلايف</span>
+    <h1>حلول متكاملة<br><span>للتغذية والصحة الحيوانية</span></h1>
+    <p>خبرة طويلة في مجال الأعلاف والمكملات الغذائية، مع دعم فني ولوجستي متكامل وأسعار تنافسية.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:07502060072">📞 اتصل بنا</a>
+      <a class="btn whatsapp" href="https://wa.me/9647502060072" target="_blank">💬 واتساب</a>
+      <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Erbil+Mosul+Road+Feed+Market" target="_blank">📍 موقعنا على الخريطة</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item">🏅 جودة عالية<small>اختيار منتجات موثوقة</small></div>
+    <div class="trust-item">🎧 دعم فني<small>حلول ومتابعة متخصصة</small></div>
+    <div class="trust-item">🚚 دعم لوجستي<small>تجهيز ومتابعة الطلبات</small></div>
+    <div class="trust-item">🏷️ أسعار تنافسية<small>حلول مناسبة للسوق</small></div>
+    <div class="trust-item">🤝 خبرة طويلة<small>سنوات من العمل في المجال</small></div>
+  </div>
+</div>
+
+<section id="products">
+  <div class="container">
+    <div class="section-head">
+      <h2>منتجاتنا</h2>
+      <p>مجموعة متكاملة من البريمكسات والمكملات والحلول المساندة لتغذية الحيوانات والدواجن والأسماك.</p>
+    </div>
+    <div class="products">
+      <article class="product"><div class="product-media"><img src="assets/mg2mix-card.jpg" alt="بريمكسات الأبقار"><span class="animal">🐄</span></div><div class="product-body"><h3>بريمكسات الأبقار</h3><p>حلول غذائية متخصصة لدعم الأداء والإنتاج.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/mg2mix-card.jpg" alt="بريمكسات الدواجن"><span class="animal">🐔</span></div><div class="product-body"><h3>بريمكسات الدواجن</h3><p>خلطات متكاملة ومغذية لبرامج الدواجن.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/mg2mix-card.jpg" alt="بريمكسات الأغنام"><span class="animal">🐑</span></div><div class="product-body"><h3>بريمكسات الأغنام</h3><p>دعم غذائي مناسب لاحتياجات الأغنام.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/levure.jpg" alt="MEDI-LEVURE LIQUID"><span class="animal">🧪</span></div><div class="product-body"><h3>الخميرة السائلة</h3><p>MEDI-LEVURE LIQUID للاستخدام في تغذية الحيوانات وفق تعليمات المنتج.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="مضادات التسمم"><span class="animal">🛡️</span></div><div class="product-body"><h3>مضادات التسمم</h3><p>حلول مساندة لبرامج التغذية والحماية من آثار السموم.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="الإنزيمات"><span class="animal">🧬</span></div><div class="product-body"><h3>الإنزيمات</h3><p>حلول لتحسين الاستفادة من مكونات العلف ضمن البرنامج الغذائي.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="مضاد الكوكسيديا"><span class="animal">🐔</span></div><div class="product-body"><h3>مضاد الكوكسيديا</h3><p>منتجات مخصصة ضمن برامج صحة وتغذية الدواجن.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="MCP"><span class="animal">🐄</span></div><div class="product-body"><h3>MCP</h3><p>مونوكالسيوم فوسفات للاستخدام في تغذية الحيوانات.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="DCP"><span class="animal">🐄</span></div><div class="product-body"><h3>DCP</h3><p>ديكالسيوم فوسفات ضمن حلول التغذية الحيوانية.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="المنكهات"><span class="animal">🐔</span></div><div class="product-body"><h3>المنكهات</h3><p>منكهات للعلف لتحسين تقبل العليقة حسب البرنامج.</p></div></article>
+      <article class="product"><div class="product-media"><img src="assets/hero-wide.jpg" alt="حليب بديل ومكملات"><span class="animal">🥛</span></div><div class="product-body"><h3>حليب بديل ومكملات</h3><p>حلول داعمة لبرامج التغذية والرعاية الحيوانية.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div>
+      <div class="section-head" style="text-align:right;margin-bottom:15px"><h2>من نحن</h2></div>
+      <p>ميديلايف شركة متخصصة في مجال الحلول الزراعية والحيوانية، تمتلك خبرة طويلة في مجال الأعلاف والتغذية الحيوانية، وتقدم مجموعة متكاملة من المنتجات والحلول للمربين وأصحاب المشاريع.</p>
+      <p>نركز على توفير منتجات موثوقة، وأسعار تنافسية، ودعم فني ولوجستي متكامل لمساعدة عملائنا في اختيار الحلول المناسبة لاحتياجاتهم.</p>
+      <div class="ticks">
+        <div class="tick">✓ خبرة طويلة في المجال</div>
+        <div class="tick">✓ دعم فني متخصص</div>
+        <div class="tick">✓ دعم لوجستي متكامل</div>
+        <div class="tick">✓ أسعار تنافسية</div>
+      </div>
+    </div>
+    <img class="about-img" src="assets/warehouse-wide.jpg" alt="مخزن ميديلايف وتجهيز المنتجات">
+  </div>
+</section>
+
+<section id="partners" class="partners">
+  <div class="container">
+    <div class="section-head"><h2>وكلاؤنا الحصريون</h2><p>شراكات مع شركات فرنسية متخصصة لتوفير حلول عالية الجودة.</p></div>
+    <div class="partner-grid">
+      <div class="partner"><strong>🇫🇷 MG2MIX</strong><span>France · حلول البريمكسات والتغذية الحيوانية</span></div>
+      <div class="partner"><strong>🇫🇷 Phosphia</strong><span>France · حلول ومكونات للتغذية الحيوانية</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-head"><h2>تواصل معنا</h2><p>يسعدنا استقبال استفساراتكم وطلباتكم.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 الاتصال والواتساب</h3>
+        <a href="tel:07502060072">0750 206 0072</a>
+        <a href="tel:07748978581">0774 897 8581</a>
+        <a href="https://wa.me/9647502060072" target="_blank">💬 تواصل معنا عبر واتساب</a>
+      </div>
+      <div class="contact-card">
+        <h3>📍 الموقع والدوام</h3>
+        <p>أربيل – طريق الموصل – سوق العلف – مقابل شركة شوفرليت</p>
+        <p><strong>الدوام:</strong> السبت إلى الخميس، من 9:00 صباحاً إلى 5:00 مساءً.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Erbil+Mosul+Road+Feed+Market" target="_blank">📍 فتح الخريطة</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Medilife | ميديلايف — جميع الحقوق محفوظة</div>
+</footer>
+</body>
+</html>
