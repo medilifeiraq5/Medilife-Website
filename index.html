@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ميديلايف | Medilife - للحلول الزراعية والحيوانية</title>
+    <style>
+        :root {
+            --primary: #1d5f6e;
+            --secondary: #2b7a8c;
+            --accent: #489fb5;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 40px 0 20px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card h4 {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .agencies {
+            background: #e2e8f0;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .agencies h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .agency-tags {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        a.phone-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            direction: ltr;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ميديلايف | Medilife</h1>
+        <p>خياراتك الأول للحلول الزراعية والحيوانية المتكاملة - خبرة طويلة في خدمة مجال الأعلاف</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📍 الموقع والعنوان</h3>
+                <p>أربيل، طريق الموصل، سوق العلف، مقابل شركة شوفرليت</p>
+                <p><small>* المكتب والمخزن في نفس الموقع</small></p>
+            </div>
+
+            <div class="info-card">
+                <h3>🕒 أوقات الدوام</h3>
+                <p>من السبت إلى الخميس</p>
+                <p>من الساعة 9:00 صباحاً حتى 5:00 مساءً</p>
+            </div>
+
+            <div class="info-card">
+                <h3>📞 الاتصال والتواصل</h3>
+                <p>الهاتف: <a href="tel:07502060072" class="phone-link">07502060072</a></p>
+                <p>الهاتف: <a href="tel:07748978581" class="phone-link">07748978581</a></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">منتجاتنا ورعايتنا المتكاملة</h2>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <h4>بريمكسات الدواجن والماشية</h4>
+                <p>خلطات متكاملة ومغذية لضمان أفضل نمو وإنتاجية.</p>
+            </div>
+            <div class="product-card">
+                <h4>خميرة سائلة (Medi-Levure)</h4>
+                <p>خميرة نشطة لدعم الهضم وصحة القناة الهضمية.</p>
+            </div>
+            <div class="product-card">
+                <h4>مضاد السموم والأنزيمات</h4>
+                <p>حماية فائقة وتحسين امتصاص الأعلاف.</p>
+            </div>
+            <div class="product-card">
+                <h4>مضاد الكوكسيديا</h4>
+                <p>حلول وقائية وعلاجية موثوقة للقطعان.</p>
+            </div>
+            <div class="product-card">
+                <h4>MCP & DCP</h4>
+                <p>مكملات الفوسفور والكالسيوم الأساسية للنمو.</p>
+            </div>
+            <div class="product-card">
+                <h4>منكهات الأعلاف وحليب بديل</h4>
+                <p>مكملات غذائية لرفع قابلية الأكل وتحسين النمو.</p>
+            </div>
+        </div>
+
+        <div class="agencies">
+            <h3>الوكالات الحصرية والشركاء</h3>
+            <p style="margin-bottom: 15px;">نحن الوكلاء الحصريون لأعرق الشركات العالمية:</p>
+            <div class="agency-tags">
+                <span class="tag">شركة MG2MIX الفرنسية</span>
+                <span class="tag">شركة Phosphia الفرنسية</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © شركة ميديلايف (Medilife) - أربيل</p>
+    </footer>
+
+</body>
+</html>
